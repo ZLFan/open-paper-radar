@@ -72,7 +72,6 @@ $Q_E(\text{EXACT}^{5}_{3,4}) = 4$，终结了一个此前只有数值证据的�
 
 | 仓库 | 可见性 | 作用 |
 | --- | --- | --- |
-| `paper-radar` | Private | 日常运行：代码、每日日报 Markdown、去重状态、PDF 备份 |
 | `open-paper-radar` | Public | 开源模板（代码 + 示例数据），同时托管每日 PDF 日报，通过 GitHub Pages 提供下载 |
 
 **为什么拆开**：GitHub 免费账号的 private 仓库不支持 Pages，而微信推送需要 PDF 下载链接。折中方案是
@@ -145,7 +144,7 @@ cd paper-radar
 git init -b main
 git add -A
 git commit -m "feat: 每日量子论文雷达"
-# 在 GitHub 上新建一个空仓库（建议 Private），然后：
+# 在 GitHub 上新建一个空仓库（建议 Public, Private 需要 Github 会员），然后：
 git remote add origin git@github.com:<你的用户名>/paper-radar.git
 git push -u origin main
 ```
